@@ -78,11 +78,12 @@ static int parse_arg(int argc, char** argv) {
 
 void usage(void) {
     std::cout << "Invalide arguments" << std::endl;
-    std::cout << "  gen_caffemodel.bin " << std::endl
+    std::cout << "  gen_caffe_info.bin " << std::endl
               << "  --prototxt=prototxt" << std::endl
               << "  --caffemodel=caffemodel" << std::endl
               << "  --gen_Caffemodel" << std::endl
-              << "  --gen_Prototxt" << std::endl;
+              << "  --gen_Prototxt" << std::endl
+              << "  --forward" << std::endl;
 }
 
 static void fill_input(caffe::Net<float> *net) {
